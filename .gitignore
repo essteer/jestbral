@@ -1,0 +1,5 @@
+Routines/
+Images/
+node_modules/
+venv/
+.env
