@@ -9,6 +9,10 @@ app.get("/", (req, res) => {
   res.render("index");
 });
 
+app.get("/footprints", (req, res) => {
+  res.render("footprints/footprints");
+});
+
 app.listen(3000, () => {
   console.log("Serving on port 3000");
 });
