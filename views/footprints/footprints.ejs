@@ -1,40 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../public/stylesheets/footprints.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&family=Noto+Serif:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+<% layout("layouts/boilerplate") %>
+<div class="container">
+  <div id="map" style="width: 400px; height: 300px">MAP PLACEHOLDER</div>
+</div>
 
-    <title>Footprints</title>
-
-    <script src="https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.js"></script>
-    <link
-      href="https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.css"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <h1>Footprints</h1>
-    <div class="container">
-      <h2 class="std-header"><a>Footprints</a></h2>
-      <h2 class="std-header"><a>Stocks</a></h2>
-      <h2 class="std-header"><a>Tree</a></h2>
-      <h2 class="dropdown">
-        <a><span class="chinese">蔣勛《美的沉思》</span></a>
-      </h2>
-    </div>
-
-    <div class="container">
-      <div id="map" style="width: 400px; height: 300px">MAP PLACEHOLDER</div>
-    </div>
-    <script>
-      const mapboxToken = "<%-process.env.MAPBOX_TOKEN%>";
-    </script>
-    <script src="/javascripts/footprintsMap.js"></script>
-  </body>
-</html>
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.js"></script>
+<link
+  href="https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.css"
+  rel="stylesheet"
+/>
+<script>
+  const mapboxToken = "<%-process.env.MAPBOX_TOKEN%>";
+</script>
+<script src="/javascripts/footprintsMap.js"></script>
