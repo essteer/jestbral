@@ -1,33 +1,32 @@
 body {
     font-family: 'Noto Serif', serif;
     background-color: #171918; /* matches image background */
-    /* background-color: skyblue; */
     color: #f0f0f0;
     text-align: center;
     text-decoration: none;
     margin: 0 auto;
     box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
 }
 .chinese {
     font-family: 'Noto Serif TC', serif;
 }
 
 .navbar {
-    background-color: #171918;
-    color: #f0f0f0;
-    text-align: center;
-    width: 100%;
-    padding: 1px 0 5px 0;
-    margin: 0 auto;
-    top: 0;
-    position: sticky;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    position: sticky;
+    width: 100%;
+    height: 60px;
+    padding: 0 0 5px 0.5rem;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+}
+
+.leftnav {
+    float: left;
 }
 
 .container {
@@ -65,18 +64,9 @@ body {
     }
 }
 
-button {
-    background: #171918;
-    color: #f0f0f0;
-    border: none;
-    margin: 0;
-}
-
 a {
     text-decoration: none;
     color: #f0f0f0;
-    display: block;
-    padding: 0.5rem 0;
 }
 
 .map-frame {
@@ -84,6 +74,7 @@ a {
     background-color: #f0f0f0;
     height: 150px;
     width: 200px;
+    margin: 0 0.5rem 0.5rem 0
 }
 
 footer {
