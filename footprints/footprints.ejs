@@ -19,10 +19,6 @@
     />
   </head>
   <body>
-    <script>
-      const mapboxToken = "<%-process.env.MAPBOX_TOKEN%>";
-    </script>
-
     <h1>Footprints</h1>
     <div class="container">
       <h2 class="std-header"><a>Footprints</a></h2>
@@ -36,6 +32,9 @@
     <div class="container">
       <div id="map" style="width: 400px; height: 300px"></div>
     </div>
+    <script>
+      const mapboxToken = "<%-process.env.MAPBOX_TOKEN%>";
+    </script>
     <script src="/javascripts/footprintsMap.js"></script>
   </body>
 </html>
