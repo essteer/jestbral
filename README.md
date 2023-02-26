@@ -13,6 +13,6 @@ Current ideas include:
 
 A random quote to test out markdown:
 
-> We have no need of other worlds. We need mirrors.
+> > We have no need of other worlds. We need mirrors.
 >
-> - Gibarian, Solaris, Stanislaw Lem
+> _Gibarian, Solaris, Stanislaw Lem_
