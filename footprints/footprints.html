@@ -18,5 +18,28 @@
       rel="stylesheet"
     />
   </head>
-  <body></body>
+  <body>
+    <h1>Footprints</h1>
+    <div class="container">
+      <h2 class="std-header"><a>Footprints</a></h2>
+      <h2 class="std-header"><a>Stocks</a></h2>
+      <h2 class="std-header"><a>Tree</a></h2>
+      <h2 class="dropdown">
+        <a><span class="chinese">蔣勛《美的沉思》</span></a>
+      </h2>
+    </div>
+    <div class="div-image"></div>
+    <div class="container">
+      <div id="map" style="width: 400px; height: 300px"></div>
+    </div>
+    <script>
+      mapboxgl.accessToken = "";
+      const map = new mapboxgl.Map({
+        container: "map", // container ID
+        style: "mapbox://styles/mapbox/streets-v12", // style URL
+        center: [-74.5, 40], // starting position [lng, lat]
+        zoom: 9, // starting zoom
+      });
+    </script>
+  </body>
 </html>
