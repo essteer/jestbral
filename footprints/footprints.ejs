@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../stylesheets/footprints.css" />
+    <link rel="stylesheet" href="../public/stylesheets/footprints.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&family=Noto+Serif:wght@400;700&display=swap"
       rel="stylesheet"
@@ -19,6 +19,10 @@
     />
   </head>
   <body>
+    <script>
+      const mapboxToken = "<%-process.env.MAPBOX_TOKEN%>";
+    </script>
+
     <h1>Footprints</h1>
     <div class="container">
       <h2 class="std-header"><a>Footprints</a></h2>
@@ -32,14 +36,6 @@
     <div class="container">
       <div id="map" style="width: 400px; height: 300px"></div>
     </div>
-    <script>
-      mapboxgl.accessToken = "";
-      const map = new mapboxgl.Map({
-        container: "map", // container ID
-        style: "mapbox://styles/mapbox/streets-v12", // style URL
-        center: [-74.5, 40], // starting position [lng, lat]
-        zoom: 9, // starting zoom
-      });
-    </script>
+    <script src="/javascripts/footprintsMap.js"></script>
   </body>
 </html>
