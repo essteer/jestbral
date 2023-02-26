@@ -1,7 +1,12 @@
+:root {
+    --main-bg-colour: #171918;
+    --main-txt-colour: #f0f0f0;
+}
+
 body {
     font-family: 'Noto Serif', serif;
-    background-color: #171918; /* matches image background */
-    color: #f0f0f0;
+    background-color: var(--main-bg-colour); /* matches image background */
+    color: var(--main-txt-colour);
     text-align: center;
     text-decoration: none;
     margin: 0 auto;
@@ -12,18 +17,18 @@ body {
 }
 
 .navbar {
-    background-color: #171918;
+    background-color: var(--main-bg-colour);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     position: sticky;
     width: 100%;
-    height: 60px;
+    height: 50px;
     padding: 0 0 5px 0.5rem;
     margin: 0 auto;
     top: 0;
-    left: 0;
+    box-sizing: border-box;
 }
 
 .leftnav {
@@ -67,19 +72,19 @@ body {
 
 a {
     text-decoration: none;
-    color: #f0f0f0;
+    color: var(--main-txt-colour);
 }
 
 .map-frame {
     color:#171918;
-    background-color: #f0f0f0;
+    background-color: var(--main-txt-colour);
     height: 150px;
     width: 200px;
     margin: 0 0.5rem 0.5rem 0
 }
 
 footer {
-    height: 60px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
