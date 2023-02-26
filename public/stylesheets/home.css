@@ -7,6 +7,9 @@ body {
     text-decoration: none;
     margin: 0 auto;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 .chinese {
     font-family: 'Noto Serif TC', serif;
@@ -88,5 +91,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: auto;
 }
 
