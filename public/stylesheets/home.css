@@ -12,6 +12,21 @@ body {
     font-family: 'Noto Serif TC', serif;
 }
 
+.navbar {
+    background-color: #171918;
+    color: #f0f0f0;
+    text-align: center;
+    width: 100%;
+    padding: 1px 0 5px 0;
+    margin: 0 auto;
+    top: 0;
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .container {
     width: 100%;
     margin: 0 auto;

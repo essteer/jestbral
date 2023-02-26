@@ -17,6 +17,10 @@ app.get("/footprints", (req, res) => {
   res.render("footprints/footprints");
 });
 
+app.get("/meidechensi", (req, res) => {
+  res.render("meidechensi/E02_chiangxun");
+});
+
 app.listen(3000, () => {
   console.log("Serving on port 3000");
 });
