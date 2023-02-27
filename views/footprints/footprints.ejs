@@ -1,13 +1,9 @@
 <% layout("layouts/boilerplate") %>
+<div class="container">Some text about the map and its functionality.</div>
 <div class="container">
-  <div id="map" style="width: 400px; height: 300px">MAP PLACEHOLDER</div>
+  <div id="map" style="width: 75%; height: 350px"></div>
 </div>
 
-<script src="https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.js"></script>
-<link
-  href="https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.css"
-  rel="stylesheet"
-/>
 <script>
   const mapboxToken = "<%-process.env.MAPBOX_TOKEN%>";
 </script>
