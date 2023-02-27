@@ -20,7 +20,7 @@ body {
     background-color: var(--main-bg-colour);
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     position: sticky;
     width: 100%;
@@ -32,7 +32,16 @@ body {
 }
 
 .leftnav {
-    float: left;
+    margin-right: auto;
+    width: 30px;
+}
+
+.rightnav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-right: auto;
+    flex: 1;
 }
 
 .container {
