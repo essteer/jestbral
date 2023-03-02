@@ -1,12 +1,12 @@
 :root {
-    --main-bg-colour: #171918;
+    --main-bg-colour: #171918; /* matches image background */
     --main-txt-colour: #f0f0f0;
     --navbar-border-colour: #2F536A;
 }
 
 body {
     font-family: 'Noto Serif', serif;
-    background-color: var(--main-bg-colour); /* matches image background */
+    background-color: var(--main-bg-colour);
     color: var(--main-txt-colour);
     text-align: center;
     text-decoration: none;

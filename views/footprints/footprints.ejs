@@ -1,9 +1,11 @@
 <% layout("layouts/boilerplate") %>
-<div class="container">Some text about the map and its functionality.</div>
 <div class="container">
   <div id="map" style="width: 75%; height: 350px"></div>
 </div>
-
+<div class="container">
+  This map uses Mapbox's Cali Terrain style, with masking applied to reveal only
+  countries I've visited.
+</div>
 <script>
   const mapboxToken = "<%-process.env.MAPBOX_TOKEN%>";
 </script>
