@@ -16,12 +16,13 @@ function App() {
               <th>Time</th>
             </tr>
           </thead>
-          <tbody>
-            <StockRow ticker="aapl" />
-            <StockRow ticker="goog" />
-            <StockRow ticker="msft" />
-            <StockRow ticker="tsla" />
-          </tbody>
+
+          <ul>
+            <StockRow ticker="AAPL" />
+            <StockRow ticker="GOOG" />
+            <StockRow ticker="MSFT" />
+            <StockRow ticker="TSLA" />
+          </ul>
         </table>
       </div>
     </div>

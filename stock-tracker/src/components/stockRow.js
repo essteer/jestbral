@@ -1,5 +1,11 @@
 import React, { Component } from "react";
-import { iex } from "../config/iex.js";
+import { stock } from "../resources/stock.js";
+
+const changeStyle = {
+  color: "#4caf50",
+  fontSize: "0.8rem",
+  marginLeft: 5,
+};
 
 class StockRow extends Component {
   constructor(props) {
@@ -9,27 +15,22 @@ class StockRow extends Component {
     };
   }
 
-  componentDidMount() {
-    const url = `${iex.base_url}/INTRADAY_PRICES/${this.props.ticker}?token=${iex.api_token}`;
+  applyData(data) {
+    this.setState({
+      data: data,
+    });
+  }
 
-    fetch(url)
-      .then((response) => response.json())
-      .then((data) => {
-        console.log(data);
-        this.setState({
-          data: data[data.length - 2],
-        });
-      });
+  componentDidMount() {
+    stock.latestPrice(this.props.ticker, this.applyData.bind(this));
   }
 
   render() {
     return (
-      <tr>
-        <td>{this.props.ticker}</td>
-        <td>{this.state.data.close}</td>
-        <td>{this.state.data.date}</td>
-        <td>{this.state.data.minute}</td>
-      </tr>
+      <li>
+        <b>{this.props.ticker}</b> {this.state.data.close}
+        <span style={changeStyle}>+12.34 (5.3%)</span>
+      </li>
     );
   }
 }
