@@ -1,6 +1,8 @@
 import logo from "./logo.svg";
 import "./main.css";
 
+import StockRow from "./components/stockRow.js";
+
 function App() {
   return (
     <div className="App">
@@ -14,6 +16,12 @@ function App() {
               <th>Time</th>
             </tr>
           </thead>
+          <tbody>
+            <StockRow ticker="aapl" />
+            <StockRow ticker="goog" />
+            <StockRow ticker="msft" />
+            <StockRow ticker="tsla" />
+          </tbody>
         </table>
       </div>
     </div>
