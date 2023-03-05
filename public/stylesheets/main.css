@@ -1,7 +1,7 @@
 :root {
     --main-bg-colour: #171918; /* matches image background */
     --main-txt-colour: #f0f0f0;
-    --navbar-border-colour: #2F536A;
+    --navbar-bg-colour: #0466c8;
 }
 
 body {
@@ -10,35 +10,15 @@ body {
     color: var(--main-txt-colour);
     text-align: center;
     text-decoration: none;
-    margin: 0 auto;
-    box-sizing: border-box;
 }
-.chinese {
+#chinese {
     font-family: 'Noto Serif TC', serif;
 }
 
 .navbar {
-    background-color: --main-bg-colour;
-    width: 100%;
-    height: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    padding: 0 0 5px 0.5rem;
-    margin: 0 0 5px 0;
-    box-sizing: border-box;
-    border-bottom: 2px solid var(--navbar-border-colour);
-}
-.navlogo {
-    display: inline-block;
-    padding: 0 5px 0 5px;
-}
-.navlinks {
-    display: flex;
-    justify-content: space-evenly;
-    flex: 1;
+    background-color: var(--navbar-bg-colour);
+    /* Text color being overridden by Bootstrap */
+    color: var(--main-txt-colour);
 }
 
 .container {
@@ -46,9 +26,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
     padding: 0.5rem 0;
     line-height: 0.8rem;
     gap: 5px;
@@ -66,7 +43,6 @@ body {
 @media (min-width: 550px) {
     .container {
         max-width: 100%;
-        flex-direction: row;
     }
 
     .div-image {
