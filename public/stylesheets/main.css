@@ -7,7 +7,7 @@
 body {
     font-family: 'Noto Serif', serif;
     background-color: var(--main-bg-colour);
-    /* color: var(--main-txt-colour); */
+    color: var(--main-txt-colour);
     text-align: center;
     text-decoration: none;
 }
@@ -20,16 +20,6 @@ body {
     /* Text color being overridden by Bootstrap */
     color: var(--main-txt-colour);
 }
-
-/* .container {
-    width: 100vw;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 0.5rem 0;
-    line-height: 0.8rem;
-    gap: 5px;
-} */
 
 .div-image {
     width: 100%;
@@ -58,17 +48,11 @@ a {
     color: var(--main-txt-colour);
 }
 
-.map-frame {
+/* .map-frame {
     color:var(--main-bg-colour);
     background-color: var(--main-txt-colour);
     height: 100px;
     width: 200px;
     display: inline-block;
     margin: 0 0.5rem 0.5rem 0
-}
-
-footer {
-    color: var(--main-txt-colour);
-    /* background-color: var(--navbar-bg-colour); */
-}
-
+} */
