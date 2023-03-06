@@ -7,7 +7,7 @@
 body {
     font-family: 'Noto Serif', serif;
     background-color: var(--main-bg-colour);
-    color: var(--main-txt-colour);
+    /* color: var(--main-txt-colour); */
     text-align: center;
     text-decoration: none;
 }
@@ -21,7 +21,7 @@ body {
     color: var(--main-txt-colour);
 }
 
-.container {
+/* .container {
     width: 100vw;
     display: flex;
     flex-wrap: wrap;
@@ -29,7 +29,7 @@ body {
     padding: 0.5rem 0;
     line-height: 0.8rem;
     gap: 5px;
-}
+} */
 
 .div-image {
     width: 100%;
@@ -68,11 +68,7 @@ a {
 }
 
 footer {
-    position: fixed;
-    bottom: 0;
-    height: 30px;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0 auto;
+    color: var(--main-txt-colour);
+    /* background-color: var(--navbar-bg-colour); */
 }
 
