@@ -47,12 +47,3 @@ a {
     text-decoration: none;
     color: var(--main-txt-colour);
 }
-
-/* .map-frame {
-    color:var(--main-bg-colour);
-    background-color: var(--main-txt-colour);
-    height: 100px;
-    width: 200px;
-    display: inline-block;
-    margin: 0 0.5rem 0.5rem 0
-} */
