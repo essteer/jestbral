@@ -21,8 +21,8 @@ app.get("/footprints", (req, res) => {
   res.render("footprints/footprints");
 });
 
-app.get("/meidechensi", (req, res) => {
-  res.render("meidechensi/E02_chiangxun");
+app.get("/yishuren", (req, res) => {
+  res.render("yishuren/yishuren");
 });
 
 app.listen(3000, () => {

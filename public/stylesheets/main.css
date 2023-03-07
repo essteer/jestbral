@@ -5,14 +5,11 @@
 }
 
 body {
-    font-family: 'Noto Serif', serif;
+    font-family: 'Noto Serif','KaiTi', '楷体', serif;
     background-color: var(--main-bg-colour);
     color: var(--main-txt-colour);
     text-align: center;
     text-decoration: none;
-}
-#chinese {
-    font-family: 'Noto Serif TC', serif;
 }
 
 .navbar {
@@ -44,6 +41,6 @@ body {
 }
 
 a {
-    text-decoration: none;
+    /* text-decoration: none; */
     color: var(--main-txt-colour);
 }
