@@ -25,6 +25,10 @@ app.get("/yishuren", (req, res) => {
   res.render("yishuren/yishuren");
 });
 
+app.get("/yishuren/episodes/:id", (req, res) => {
+  res.render("yishuren/episodes/:id");
+});
+
 app.listen(3000, () => {
   console.log("Serving on port 3000");
 });
