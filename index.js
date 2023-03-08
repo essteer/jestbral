@@ -25,8 +25,8 @@ app.get("/yishuren", (req, res) => {
   res.render("yishuren/yishuren");
 });
 
-app.get("/yishuren/episodes/:id", (req, res) => {
-  res.render("yishuren/episodes/:id");
+app.get(/.*cx_\d\d$/, (req, res) => {
+  res.render("yishuren/episodes/cx_02");
 });
 
 app.listen(3000, () => {
