@@ -15,11 +15,17 @@
     </p>
     <p>
       An economics graduate, I moved to Chongqing to study Mandarin after a trip
-      across Yunnan and Sichuan provinces. It took effort become fluent, but it
-      was my passion, and the privilege of adapting to life in a foreign place
+      across Yunnan and Sichuan provinces. It took effort to become fluent, but
+      it was my passion, and the incremental feeling of adaptation to life there
       was a constant source of motivation.
     </p>
-    <p>MAP PLACEHOLDER</p>
+  </div>
+  <!-- Chongqing Map -->
+  <div class="container-fluid col-md-8 text-start mt-3">
+    <div id="mapCQ" style="width: 100%; height: 275px"></div>
+  </div>
+  <!-- Chongqing Map -->
+  <div class="container-fluid col-md-8 text-start mt-3">
     <p>
       The move and the acquisition of a new language changed my life in ways I
       never anticipated.
@@ -28,7 +34,13 @@
       Programming involves languages of a different kind, but the process of
       constant learning and refining holds equal appeal.
     </p>
-    <p>MAP PLACEHOLDER</p>
+  </div>
+  <!-- Hong Kong Map -->
+  <div class="container-fluid col-md-8 text-start mt-3">
+    <div id="mapHK" style="width: 100%; height: 275px"></div>
+  </div>
+  <!-- Hong Kong Map -->
+  <div class="container-fluid col-md-8 text-start mt-3">
     <p>Hong Kong has been home for years now, but in the words of Tom Waits:</p>
     <figure class="text-end">
       <blockquote class="blockquote fs-6 text">
@@ -43,3 +55,7 @@
   </div>
   <!-- Introduction -->
 </div>
+<script>
+  const mapboxToken = "<%-process.env.MAPBOX_TOKEN%>";
+</script>
+<script src="/javascripts/indexMap.js"></script>
