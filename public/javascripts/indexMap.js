@@ -7,7 +7,7 @@ const boundsCQ = [
 const mapCQ = new mapboxgl.Map({
   container: "mapCQ", // container ID
   style: "mapbox://styles/essteer/clf2ms4w9000r01mtver9af08", // style URL
-  center: [106.541176, 29.557167], // starting position [lng, lat]
+  center: [106.56023, 29.560624], // starting position [lng, lat]
   zoom: 11.5, // starting zoom
   maxBounds: boundsCQ,
 });
