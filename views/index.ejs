@@ -1,23 +1,42 @@
 <% layout("layouts/boilerplate") %>
-<!-- Introduction -->
 <div class="container">
   <h1 class="heading">UNTITLED, 2023</h1>
+  <!-- Introduction -->
   <div class="container-fluid col-md-8 text-start mt-3">
     <p>
       This site is part portfolio, part laboratory, and part collage of things
-      that draw me in, that I would like to share. It is probably other things,
-      too.
+      that draw me in, that I would like to share. It may yet become other
+      things, too.
     </p>
     <p>
-      In 2022 I began to learn Python, and then JavaScript and a range of web
-      development tools. As with many before me, programming has fascinated me
-      to the point of deciding to change career, and make it my trade.
+      <a class="heading" href="/footprints">FOOTPRINTS</a> is a project around
+      maps and memories; <a class="heading" href="#">ROOTS</a> is a family tree;
+      and <a class="heading" href="#">STOCKS</a> is part portfolio tracker, part
+      intro to asset allocation theory.
     </p>
     <p>
-      An economics graduate, I moved to Chongqing to study Mandarin after a trip
-      across Yunnan and Sichuan provinces. It took effort to become fluent, but
-      it was my passion, and the incremental feeling of adaptation to life there
-      was a constant source of motivation.
+      <a class="heading" href="/yishuren">YISHUREN</a> is a reference list of
+      artists and thinkers from the Chinese-speaking world whose works I have
+      enjoyed, and resources that have been useful as I've delved into the
+      language.
+    </p>
+    <p>Feel free to explore, or read on below for a few words about me.</p>
+    <!-- Dividing line -->
+    <hr class="hr my-4" />
+    <!-- Introduction -->
+  </div>
+</div>
+<!-- Bio -->
+<div class="container">
+  <div class="container-fluid col-md-8 text-start mt-3">
+    <p>
+      An economics graduate, I moved to Chongqing to study Mandarin after a
+      hitchhiking trip across Yunnan and Sichuan, beautiful areas ranging from
+      mountain plateaus in the north, to rainforest in the south.
+    </p>
+    <p>
+      Fluency took effort, but it was my passion, and the incremental feeling of
+      adaptation to life there was a constant source of motivation.
     </p>
   </div>
   <!-- Chongqing Map -->
@@ -27,12 +46,20 @@
   <!-- Chongqing Map -->
   <div class="container-fluid col-md-8 text-start mt-3">
     <p>
-      The move and the acquisition of a new language changed my life in ways I
-      never anticipated.
+      Chongqing is one of the few major Chinese cities to have developed
+      "naturally", as dictated by its mountainous terrain at the confluence of
+      the Yangtze and Jialing rivers. It has a lot of character, aided by its
+      strong working-class culture and spicy cuisine.
     </p>
     <p>
-      Programming involves languages of a different kind, but the process of
-      constant learning and refining holds equal appeal.
+      The decision to move there and the acquisition of a new language changed
+      my life in ways I never anticipated.
+    </p>
+    <p>
+      I relocated for work in Hong Kong, a much more global city but similar in
+      its density, and mix of mountain and water. I miss Chongqing's food and
+      energy, but the access to trails and ocean here alongside Hong Kong's own
+      urban offerings is hard to rival.
     </p>
   </div>
   <!-- Hong Kong Map -->
@@ -41,7 +68,19 @@
   </div>
   <!-- Hong Kong Map -->
   <div class="container-fluid col-md-8 text-start mt-3">
-    <p>Hong Kong has been home for years now, but in the words of Tom Waits:</p>
+    <p>
+      In 2022 I began to learn Python, then JavaScript and a range of web
+      development tools.
+    </p>
+    <p>
+      Programming involves languages of a different kind to those spoken, but
+      the process of constant learning and refining holds equal appeal.
+    </p>
+    <p>
+      As with many before me, coding has fascinated me to the point of deciding
+      to change career and make it my trade. I don't yet know where it will take
+      me, but that's part of the fun.
+    </p>
     <figure class="text-end">
       <blockquote class="blockquote fs-6 text">
         <p>Anywhere, anywhere I'm gonna lay my head, I'm gonna call my home.</p>
@@ -53,7 +92,7 @@
     <!-- Dividing line -->
     <hr class="hr my-4" />
   </div>
-  <!-- Introduction -->
+  <!-- Bio -->
 </div>
 <script>
   const mapboxToken = "<%-process.env.MAPBOX_TOKEN%>";
