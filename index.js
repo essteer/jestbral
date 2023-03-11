@@ -5,7 +5,6 @@ if (process.env.NODE_ENV !== "production") {
 const express = require("express");
 const path = require("path");
 const ejsMate = require("ejs-mate");
-// const bootstrap = require("bootstrap");
 const app = express();
 
 app.engine("ejs", ejsMate);
