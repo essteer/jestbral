@@ -6,4 +6,5 @@ const map = new mapboxgl.Map({
   style: "mapbox://styles/essteer/clf4u98nm008k01qaif4rt0il", // admin1
   center: [114.136253, 22.356514], // starting position [lng, lat]
   zoom: 9, // starting zoom
+  minZoom: 3,
 });
