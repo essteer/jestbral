@@ -1,13 +1,9 @@
 mapboxgl.accessToken = mapboxToken;
-// const bounds = [
-//   [113.535, 21.85], // Southwest coordinates
-//   [114.85, 22.85], // Northeast coordinates
-// ];
 
 const map = new mapboxgl.Map({
   container: "map", // container ID
-  style: "mapbox://styles/essteer/clerx9p4b000701o57iopevvc", // style URL
+  // style: "mapbox://styles/essteer/clerx9p4b000701o57iopevvc", // admin0
+  style: "mapbox://styles/essteer/clf4u98nm008k01qaif4rt0il", // admin1
   center: [114.136253, 22.356514], // starting position [lng, lat]
   zoom: 9, // starting zoom
-  // maxBounds: bounds,
 });
