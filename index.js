@@ -21,6 +21,10 @@ app.get("/footprints", (req, res) => {
   res.render("footprints/footprints");
 });
 
+app.get("/stocks", (req, res) => {
+  res.render("stocks/stocks");
+});
+
 app.get("/yishuren", (req, res) => {
   res.render("yishuren/yishuren");
 });
